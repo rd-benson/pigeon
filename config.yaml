@@ -1,0 +1,14 @@
+mqtt:
+  url: broker.hivemq.com
+  port: 1883
+  encryption: tcp
+database:
+  url: https://westeurope-1.azure.cloud2.influxdata.com
+  token: INFLUXDB_TOKEN
+sites:
+  - name: bldg_59
+    publishSeparate: true
+    QOS: 1
+    devices: 
+      - topic: ele
+        valueType: float32
